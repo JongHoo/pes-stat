@@ -18,7 +18,7 @@
 <main>
   <Router url="{url}">
     <div class="header">
-      <span class="main-logo" on:click={moveHome}>PES STAT PAGE</span>
+      <span class="main-logo" on:click={moveHome}>PES STAT</span>
     </div>
     <div class="menu-bar">
       <span class="menu" on:click={moveRanking}>랭킹</span>

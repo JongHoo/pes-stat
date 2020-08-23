@@ -25,6 +25,9 @@
 </script>
 
 <main>
+  <div class="title">
+    랭킹
+  </div>
   <div class="table-area">
     <table>
       <thead>
@@ -51,6 +54,13 @@
 
 <style lang="less">
   main {
+    & > .title {
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
+      font-weight: bold;
+      font-size: 25px;
+    }
     & > .table-area {
       display: flex;
       justify-content: center;

@@ -1,10 +1,20 @@
 <script>
-  let name = '상대전적'
 </script>
 
 <main>
-  <h1>{name}!</h1>
+  <div class="title">
+    상대전적
+  </div>
 </main>
 
-<style>
+<style lang="less">
+  main {
+    & > .title {
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
+      font-weight: bold;
+      font-size: 25px;
+    }
+  }
 </style>
