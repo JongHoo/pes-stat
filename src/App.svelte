@@ -41,6 +41,7 @@
     .menu-bar {
       display: flex;
       justify-content: center;
+      margin-bottom: 50px;
       .menu {
         font-weight: bold;
         cursor: pointer;
