@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte'
-  let name = 'Ranking'
   let players = []
 
   onMount(() => {

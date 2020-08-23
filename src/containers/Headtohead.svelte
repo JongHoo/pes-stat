@@ -1,5 +1,5 @@
 <script>
-  let name = '홈'
+  let name = '상대전적'
 </script>
 
 <main>
