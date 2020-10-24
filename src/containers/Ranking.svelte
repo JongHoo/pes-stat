@@ -1,26 +1,12 @@
 <script>
   import { onMount } from 'svelte'
+  import CONSTANTS from '../constants/Constants'
   let players = []
 
   onMount(() => {
-    players = [
-      {
-        name: '우리형',
-        win: 3,
-        draw: 2,
-        lose: 1,
-        total: 6,
-        percentage: 50
-      },
-      {
-        name: '호동생',
-        win: 1,
-        draw: 2,
-        lose: 3,
-        total: 6,
-        percentage: 16.7
-      }
-    ]
+    players = CONSTANTS.TEMP_PLAYER_INFO_LIST.sort((a, b) => {
+      return (b.win / b.total) - (a.win / a.total)
+    })
   })
 </script>
 
@@ -42,7 +28,7 @@
           <td>{player.win}</td>
           <td>{player.draw}</td>
           <td>{player.lose}</td>
-          <td>{player.percentage.toFixed(1)}%</td>
+          <td>{(player.win / player.total * 100).toFixed(1)}%</td>
         </tr>
       {:else}
         <tr><td colspan="6">No Data</td></tr>
